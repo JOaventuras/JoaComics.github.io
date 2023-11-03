@@ -6,8 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+
 }
 
 
@@ -97,25 +96,52 @@ header.scrolled h1 {
 
 /*######################### S E P A R A D O R ######################### */
 
-.separador {
-    padding-TOP: 50px;
-    margin-left: 20px;
+
+
+
+
+/*######################### C O N T A C T O  ######################### */
+.section-instagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
 }
 
+.tarjeta-instagram {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: 0 auto;
+}
 
+.tarjeta-instagram img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
 
+.tarjeta-instagram h2 {
+    color: #333;
+}
 
-
-
+p {
+    color: #555555;
+}
 
 /*######################### S E C C I O N E S ######################### */
 
 
 
 section {
+    margin-top: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+
 
 
 }
@@ -276,6 +302,13 @@ label {
 
 
 /*######################### F O O T E R ######################### */
+main {
+    flex: 1;
+    max-width: 100%; /* Ajusta según sea necesario */
+    overflow-y: auto; /* Agrega barra de desplazamiento vertical si el contenido es más grande que la ventana */
+    margin-top: 25px;
+}
+
 
 footer {
     background-color: #1a1919;
@@ -283,4 +316,8 @@ footer {
     text-align: center;
     padding: 1em;
     z-index: 998;
+}
+footer p{
+    font-size: 1.5em;
+    color: aliceblue;
 }

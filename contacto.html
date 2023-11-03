@@ -1,88 +1,58 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - JOA Cómics</title>
-        <link rel="stylesheet" href="styles.css">
-
-    <style>
-    
-        section {
-            display: flex;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .separador {
-            margin-top: auto;
-            padding: 0px;
-        }
-
-        .tarjeta-instagram {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 300px;
-            margin: 0 auto;
-        }
-
-        .tarjeta-instagram img {
-            border-radius: 50%;
-            max-width: 100%;
-            height: auto;
-        }
-
-        .tarjeta-instagram h2 {
-            color: #333;
-        }
-
-        p {
-            color: #777;
-        }
-    </style>
+    <title>Catálogo de Libros</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="body-inicio">
 
     <header>
         <h1>JOA CÓMICS</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html"><B>Inicio</B></a></li>
                 <li class="dropdown">
-                    <a href="comic.html" class="dropbtn"><B>Cómic</B></a>
+                    <a href="comic.html" class="dropbtn">Cómic</a>
                     <div class="dropdown-content">
-                        <a href="comic.html?filtro=marvel">Marvel</a>
                         <a href="comic.html?filtro=dc">DC</a>
+                        <a href="comic.html?filtro=marvel">Marvel</a>
                         <a href="comic.html?filtro=batman">Batman</a>
                         <a href="comic.html?filtro=flash">Flash</a>
                         <a href="comic.html?filtro=simpsons">Simpsons</a>
                         <a href="comic.html?filtro=otros">Otros</a>
 
                     </div>
-                </li>
-                <li><a href="manga.html">Manga</a></li>
+                </li>                    
+                <li><a href="comic.html?filtro=manga">Manga</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
 
+    <main>
     <section class="separador">
         <p>...</p>
     </section>
+    <section class="section-instagram">
+        <div class="tarjeta-instagram">
+            <a href="https://www.instagram.com/joaosterman/" target="_blank"><img src="images/joaosterman.jpg" alt="jOa Osterman"></a>
+            <a href="https://www.instagram.com/joaosterman/" target="_blank"><h2>@joaosterman</h2></a>
+            <p>Mandame mensaje para resolver cualquier consulta</p>
+        </div>
+    </section>
 
-<section>
-    <div class="tarjeta-instagram">
+</main>
 
-        <img src="images/joaosterman.jpg" alt="jOa Osterman">
-        <a href="https://www.instagram.com/joaosterman/" target="_blank"><h2>@joaosterman</h2></a>
-        <p>Mandame mensaje para resolver cualquier consulta</p>
-    </div>
+    <footer>
+        <p>&copy; 2023 JoaOsterman</p>
+    </footer>
 
-    
-</section>
+
+
+    <script src="script.js"></script>
 
 </body>
 </html>
