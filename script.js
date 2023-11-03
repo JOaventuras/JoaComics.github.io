@@ -106,6 +106,80 @@ function filtrarProductos(filtro) {
 
 
 
+//COMMON HEADER
+
+// common.js
+document.addEventListener("DOMContentLoaded", function() {
+    // Cargar el encabezado en el elemento con id="header-container"
+    var headerContainer = document.getElementById("header-container");
+    headerContainer.innerHTML = `
+    <header>
+    <h1>JOA CÓMICS</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li class="dropdown">
+                <a href="comic.html" class="dropbtn">Cómic</a>
+                <div class="dropdown-content">
+                    <a href="comic.html?filtro=dc">DC</a>
+                    <a href="comic.html?filtro=marvel">Marvel</a>
+                    <a href="comic.html?filtro=batman">Batman</a>
+                    <a href="comic.html?filtro=flash">Flash</a>
+                    <a href="comic.html?filtro=simpsons">Simpsons</a>
+
+                </div>
+            </li>                    
+            <li><a href="comic.html?filtro=manga">Manga</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+
+    `;
+});
+
+// common.js
+document.addEventListener("DOMContentLoaded", function() {
+    // Cargar el encabezado en el elemento con id="header-container"
+    var footerContainer = document.getElementById("footer-container");
+    footerContainer.innerHTML = `
+    <header>
+    <h1>JOA CÓMICS</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html"><B>Inicio</B></a></li>
+            <li class="dropdown">
+                <a href="comic.html" class="dropbtn">Cómic</a>
+                <div class="dropdown-content">
+                    <a href="comic.html?filtro=dc">DC</a>
+                    <a href="comic.html?filtro=marvel">Marvel</a>
+                    <a href="comic.html?filtro=batman">Batman</a>
+                    <a href="comic.html?filtro=flash">Flash</a>
+                    <a href="comic.html?filtro=simpsons">Simpsons</a>
+
+                </div>
+            </li>                    
+            <li><a href="comic.html?filtro=manga">Manga</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+
+    `;
+});
+
+
+
+
+
+
+
 
 
 
