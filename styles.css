@@ -330,22 +330,99 @@ footer p{
 
 
 
-<div class="contenedor">
-        <div class="tarjeta">
-            <h2>Batman 80 Años</h2>
-            <p>¡Celebremos el 80 aniversario del Caballero Oscuro!</p>
-        </div>
-        <div class="tarjeta">
-            <h2>JoJo's Bizarre Adventure</h2>
-            <p>Explora el mundo extravagante de JoJo y sus aventuras únicas.</p>
-        </div>
-        <div class="tarjeta">
-            <h2>DC Comics</h2>
-            <p>Descubre el universo de DC con sus icónicos superhéroes y villanos.</p>
-        </div>
-        <div class="tarjeta">
-            <h2>INFO</h2>
-            <p>Obtén la información más reciente sobre cómics y eventos.</p>
-        </div>
-    </div>
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.tarjeta {
+    flex: 1;
+    width: 90%; /* Ancho relativo para pantallas más pequeñas */
+    max-width: 400px; /* Ancho máximo para pantallas medianas y grandes */
+    min-height: 300px; /* Altura mínima */
+    max-height: 400px; /* Altura máxima */
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta h2 {
+    color: #ffffff;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+
+.tarjeta p {
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+
+}
+
+.tarjeta-batman {
+    background-image: url(images/batman.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.tarjeta-jojos {
+    background-image: url(images/jotaro.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+.tarjeta-dc {
+    background-image: url(images/superman.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+.tarjeta-info {
+    background-image: url(images/jotaro.jpg);
+    background-size: cover;
+    background-position: left;
+}
+
+
+@media (min-width: 768px) {
+    .tarjeta {
+        width: 45%; /* Reducir el ancho para pantallas medianas */
+    }
+}
+
+@media (min-width: 1024px) {
+    .tarjeta {
+        width: 30%; /* Reducir aún más el ancho para pantallas grandes */
+    }
+}
+
+@media (min-width: 1440px) {
+    .tarjeta {
+        width: 20%; /* Reducir aún más el ancho para pantallas extra grandes */
+    }
+}
+
+
+
+
+
+
 
